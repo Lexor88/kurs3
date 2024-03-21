@@ -23,8 +23,8 @@ def print_source_correct(info_about_source):
     if not info_about_source.startswith("Счет"):
         number = info_about_source[-16:]
         first_block = f"{number[:4]}"
-        second_block = f"{number[4:6]}"
-        third_block = f"**"
+        second_block = f"{number[4:6]}**"
+        third_block = "****"
         fourth_block = f"{number[-4:]}"
         return f"{info_about_source[:-16]}{first_block} {second_block} {third_block} {fourth_block}"
     else:
